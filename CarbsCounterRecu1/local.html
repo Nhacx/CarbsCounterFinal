@@ -1,0 +1,123 @@
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv= "Content-Type" content= "text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarbsCounter</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style3.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js">
+</script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 navbar">
+<img id="logo" src='img/logo5.png' height = '115px' width='135px' class="logo navbar-brand text-white offset-md-2"/> 
+<ul class="nav">
+<li class="nav-item active"><a href="#" class="nav-link">Associações perto de você!</a></li>
+<li class="nav-item"> <a href="land.html" class="nav-link" target="_self"> Home </a></li>
+<li class="nav-item"> <a href="loginpage.html" class="nav-link" target="_self"> Login </a></li>
+<li class="nav-item"> <a href="artigos.html" class="nav-link" target="_self"> Sou diabético, e agora? </a></li> 
+<li class="nav-item"><a href="tabela.html" class="nav-link" target="_self"> Tabela Nutricional</a></li>  
+<li class="nav-item"><a href="sobrenos.html" target="_self" class="nav-link">Sobre nós</a></li> 
+<li class="nav-item"><a href="diario.html" target="_self" class="nav-link">Diário Glicêmico</a></li>  
+</ul>
+
+</div>
+</div>
+</div>
+ 
+</br>
+</br>
+</br>
+
+<div class="container">
+<p id="p1"> 
+
+<p id="demo">Clique no botão para obter sua localização:</p>
+<button onclick="getLocation()">Encontrar</button>
+<div id="mapholder"></div>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyD3Ke4l_Hqtal5vBxTAFzwnSB0n402x0gg"></script>
+
+<script>
+var x=document.getElementById("demo");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition,showError);
+    }
+  else{x.innerHTML="Geolocalização não é suportada nesse browser.";}
+  }
+ 
+function showPosition(position)
+  {
+  lat=position.coords.latitude;
+  lon=position.coords.longitude;
+  latlon=new google.maps.LatLng(lat, lon)
+  mapholder=document.getElementById('mapholder')
+  mapholder.style.height='250px';
+  mapholder.style.width='500px';
+ 
+  var myOptions={
+  center:latlon,zoom:14,
+  mapTypeId:google.maps.MapTypeId.ROADMAP,
+  mapTypeControl:false,
+  navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+  };
+  var map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
+  var marker=new google.maps.Marker({position:latlon,map:map,title:"Você está Aqui!"});
+  }
+ 
+function showError(error)
+  {
+  switch(error.code)
+    {
+    case error.PERMISSION_DENIED:
+      x.innerHTML="Usuário rejeitou a solicitação de Geolocalização."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML="Localização indisponível."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML="O tempo da requisição expirou."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML="Algum erro desconhecido aconteceu."
+      break;
+    }
+  }
+</script>
+
+
+</p>
+
+</div>
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+</main>
+
+<footer class="rodape">
+        <ul class="icones">
+            <li><a href="https://github.com/BeatrizTrindade073/CarbsCounter" target="_blank"><img src="img/facebook.png" height = '20px' width='20px' alt="Icone do Facebook"></a></li>
+            <li><a href="https://github.com/BeatrizTrindade073/CarbsCounter" target="_blank"><img src="img/gmail.png" height = '20px' width='20px' alt="Icone do Gmail"></a></li>
+            <li><a href="https://github.com/BeatrizTrindade073/CarbsCounter" target="_blank"><img src="img/github.png" height = '20px' width='20px' alt="Icone do GitHub"></a></li>
+        </ul>
+        &copy; Carbs Counter 2022
+ 
+
+        </footer>
+
+</body>
+</html>

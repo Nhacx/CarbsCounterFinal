@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,100&display=swap');
+html {
+    
+    min-height: 100%;
+}
+
+* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+
+}
+
+		body {
+			font-family: sans-serif;
+			background: #142E47;
+margin: 0 0 60px;
+		}
+#carbs{
+
+
+
+font-family: 'Raleway', sans-serif;
+
+
+}
+		.cabecalho {
+
+  background:  white;
+  font-size: 20px;
+padding: 0.15rem;	
+			text-align: center;
+
+			font-size: 20px;
+
+		}
+
+		
+
+		.container {
+			max-width: 50em;
+			margin: 0 auto;
+
+
+		}
+
+		.conteudo > .container {
+			padding: 2em;
+			
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #F5F5F5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+			
+		}
+
+		.barra {
+			background: #D90F0F;
+			height: 0.4em;
+		}
+
+
+		#p1{
+
+
+bottom: 30.43%;
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: justify;
+display: flex;
+align-items: center;
+
+color: #405c60;}
+
+
+.menu {
+margin-left: 20px;    
+background-color: #D90F0F;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    padding:15px;
+    margin-top:40px;
+font-size: 16px;
+border: none;
+
+
+}
+
+.login{
+margin-right: 20px;
+background-color: #D90F0F; 
+color: white;
+border-radius: 6px; 
+cursor: pointer; 
+padding:15px; 
+margin-top: 31px;
+border: none;
+font-size: 16px;
+float: right;
+
+ 
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: white;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: #41c9c5;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+#logo {
+margin-top: 2px;
+}
+
+.rodape {
+    line-height: 50px;
+    height: 100px;
+    background: white;
+    color: #191818;
+    padding: 28px;
+position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;    
+ 
+}
+
+.icones{
+    float: right;
+    display: table;
+}
+
+.icones li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+
