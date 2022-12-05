@@ -48,5 +48,5 @@ references alimentos(id),
 add foreign key (id_diario)
 references diarios (id);
 
-alter tale usuarios
+alter table usuarios
 modify column cpf varchar(14) not null unique;
