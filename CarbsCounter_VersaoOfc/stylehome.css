@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+html {
+   position: relative;
+    min-height: 100%;
+}
+
+body {
+font-family: 'Red Hat Display', sans-serif;
+background: #142e47;
+margin: -25 0 60px; 
+		}
+	
+		.container {
+			max-width: 80em;
+			margin: 0 auto;
+			display: table;
+			padding: 2em;
+			background: white;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+
+
+		}
+
+		.conteudo {
+			padding: 2em;
+			
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+		}
+
+
+		#p1{
+
+
+bottom: 30.43%;
+font-family: 'Red Hat Display', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: justify;
+display: flex;
+align-items: center;
+color: black;
+}
+
+
+
+.rodape {
+    line-height: 50px;
+    height: 100px;
+    background: white;
+    color: #191818;
+    padding: 28px;
+position: absolute;
+    bottom: 0;
+    width: 100%;   
+}
+
+.icones{
+    float: right;
+    display: table;
+}
+
+.icones li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+.navbar{
+	position: relative;
+	top: 0;
+	z-index: 99999;
+	padding:25px 0;
+background: white;
+
+}
+
+.navbar ul.nav{
+	margin-right: 10%;
+	color: black;
+}
+
+.navbar ul.nav li.active{
+	background:#142E47;
+	color: black;
+
+}
+.navbar ul.nav li:hover{
+	background:#D90F0F;
+	color: black;
+
+}
+.navbar ul.nav li a{
+	color: black;
+	font-size: 0.75em;
+	font-weight: 500;
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a{
+	color: white;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+#carousels{
+	position: relative;
+	height: 90vh;
+	width: 100%;
+	top: 15;
+}
+#carousels .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: white;
+}
+#carousels .carousel-inner:before{
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.25);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#carousels .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url("img/fundo.jpg");
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: absolute;
+}
+#carousels .carousel-inner .carousel-item:nth-child(2){
+	background: url("img/diabetes.jpg");
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: absolute;
+}
+#carousels .carousel-inner .carousel-item:nth-child(3){
+	background: url("img/img1.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: absolute;
+}
+
+#carousels .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 60%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+
+}
+#carousels .carousel-inner .carousel-item h2{
+	height: auto;
+	color: white; 
+	width: 100%;
+	z-index: 1;
+	align-items: center;
+font-family: 'Amatic SC', cursive;
+	font-size: 4.5em;
+	font-weight: 750;
+
+}
+
+#carousels .carousel-inner .carousel-item p a{
+	height: auto;
+	color: white;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.artigos{
+width: 100%
+  padding: 50px;
+  margin: 20px;
+font-weight: bold;
+
+}
+
+.artigos:hover{
+
+ background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+}
+
+.artigos:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+
+h1{
+  font-size: 28px;
+  color: #405c60;
+  padding: 2px 0 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+

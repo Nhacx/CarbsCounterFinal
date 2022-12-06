@@ -1,0 +1,31 @@
+<html lang= "pt-br">
+<head>
+<title>CarbsCounter</title>
+<meta charset="UTF-B">
+
+
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-32x32-1.png">
+
+<frameset cols='100%'>
+<frame name= 'frame1' src='home0.php' frameborder='no' />
+
+
+</frameset>
+
+<?php
+require "login_valid.php";
+session_start();
+    if(isset($_SESSION["autenticado"]))
+    {
+        header("Location: land.php");
+    }
+	
+
+?>
+
+
+
+</head>
+<body>
+</body>
+</html> 
